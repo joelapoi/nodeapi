@@ -11,6 +11,6 @@ module.exports = function (app) {
     .get(jsonku.getall);
 
 
-  app.route('/getById')
+  app.route('/getById/:id')
     .get(jsonku.getById);
 }

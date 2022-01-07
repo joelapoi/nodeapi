@@ -23,9 +23,7 @@ exports.getall = function (req, res) {
 
 exports.getById = function (req, res) {
   let id = req.params.id;
-  connection.query('SELECT * FROM mahasiswa WHERE npm = ?', {
-    id
-  }, function (error, rows, fields) {
+  connection.query('SELECT * FROM mahasiswa WHERE id = ?', [id], function (error, rows, fields) {
     if (error) {
       console.log(error);
     } else {
