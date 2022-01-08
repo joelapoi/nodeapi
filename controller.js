@@ -78,4 +78,4 @@ exports.delete = function(req,res) {
       response.ok('Data berhasil dihapus!', res);
     }
   });
-}
+};
