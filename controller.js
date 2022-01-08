@@ -33,7 +33,6 @@ exports.getById = function (req, res) {
 
 };
 
-
 //menambahkan data mahasiswa
 
 exports.add = function(req, res) {
